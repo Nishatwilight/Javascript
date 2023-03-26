@@ -1,0 +1,28 @@
+<div class="row">
+    <nb-card size="small" class=" col mt-5">
+        <nb-card-header> Celcious and Farenit Convertor</nb-card-header>  
+        <nb-card-body>
+            <input type="text" nbInput placeholder="Enter a Value in Celcious" [(ngModel)]="c2fConvertor">
+            <div *ngIf = '!c2F'>
+                Enter only number
+            </div>
+            
+            <button class="ms-5" nbButton (click)="c2fConverting()" status="success">Convert Here</button>
+        </nb-card-body>
+        <nb-card-footer>
+            Celcious value for {{c2fValue}}°C is {{farenit}}°F
+        </nb-card-footer>
+      </nb-card>
+      <nb-card size="small" class=" col mt-5">
+        <nb-card-header> Farenit to Celcious Convertor</nb-card-header>  
+        <nb-card-body>
+            <input type="text" nbInput placeholder="Enter a Value in Farenit" [(ngModel)]="f2cConvertor">
+            <button class="ms-5"  nbButton (click)="f2cConverting()" status="success">Convert Here</button>
+        </nb-card-body>
+        <nb-card-footer>
+            Farenit value for {{f2cValue}}°F is {{celcious}}°C
+        </nb-card-footer>
+      </nb-card>
+</div>
+
+

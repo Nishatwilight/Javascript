@@ -1,0 +1,22 @@
+<nb-card size="small" class="w-50 mx-auto mt-5">
+    <nb-card-header>Words and Letter Counter</nb-card-header>
+    <nb-card-body>
+        <textarea id="enterValue" nbInput rows="5" cols="20" fullWidth="" placeholder="Enter The Words Here" status="success" [(ngModel)]="searchSentence" (ngModelChange)="canges($event)"></textarea>
+        <div class="d-flex justify-content-between">
+            <!-- <button nbButton status="primary" (click)="countCheckingLetter()">Letter Count</button>
+            <button nbButton status="success" (click)="countCheckingWords()">Word Count</button> -->
+            <button nbButton status="primary" (click)="clicking()">Click</button>
+
+        </div>
+    </nb-card-body>
+    <nb-card-footer>
+        <!-- <div *ngIf="countCheckingLetter()"> -->
+            <div>
+            No of Letter in Here is: {{letter}}
+        </div>
+        <!-- <div *ngIf="countCheckingWords()"> -->
+            <div>
+            No of Words in Here is: {{word}}
+        </div>
+    </nb-card-footer>
+  </nb-card>

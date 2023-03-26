@@ -1,0 +1,17 @@
+<nb-card size="small" class="w-50 mx-auto mt-5">
+    <nb-card-header>Palindrome Checker</nb-card-header>
+    <nb-card-body>
+        <input class="h-40" nbInput fullWidth="" placeholder="Enter The Words Here" status="success" [(ngModel)]="searchSentence">
+    </nb-card-body>
+    <nb-card-footer>
+        <div class="text-end">
+            <button nbButton status="primary" (click)="clicking()">Check Here</button>
+        </div>
+            <div *ngIf= "cheking">
+                Palindrome is True
+            </div>
+            <div *ngIf= "!cheking">
+                Palindromw is False
+            </div>
+    </nb-card-footer>
+</nb-card>
