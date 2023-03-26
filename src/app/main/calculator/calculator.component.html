@@ -1,0 +1,23 @@
+<nb-card size="small" class="w-50 mx-auto mt-5">
+    <nb-card-header>Simple Calculator</nb-card-header>
+    <nb-card-body>
+
+        <input class="h-40" pattern="[0-9]+" nbInput fullWidth="" placeholder="Enter The Numbers" status="success" [(ngModel)]="calcyValue1">
+        <div>
+            <nb-button-group  (valueChange)="updateSingleSelectGroupValue($event)" class="d-flex justify-content-between m-4">
+                <button nbButtonToggle value="+">+</button>
+                <button nbButtonToggle value="-">-</button>
+                <button nbButtonToggle value="*">*</button>
+                <button nbButtonToggle value="/">/</button>
+              </nb-button-group>
+        </div>
+        <input class="h-40" pattern="[0-9]+" nbInput fullWidth="" placeholder="Enter The Numbers" status="success" [(ngModel)]="calcyValue2">
+
+    </nb-card-body>
+    <nb-card-footer>
+        <div>Answer: {{final}}</div>
+        <div class="text-end">
+            <button nbButton status="primary" (click)="clicking()">Calculate</button>
+        </div>
+    </nb-card-footer>
+</nb-card>

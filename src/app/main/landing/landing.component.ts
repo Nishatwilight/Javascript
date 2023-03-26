@@ -24,6 +24,14 @@ export class LandingComponent {
     {
       title: 'Celcious Convertor',
       route: '/main/celciousConvertor',
+    },
+    {
+      title: 'Patterns',
+      route: '/main/patterns', 
+    },
+    {
+      title: 'Calculator',
+      route: '/main/calculator', 
     }
   ];
 

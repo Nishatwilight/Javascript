@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 import { MainRoutingModule } from './main-routing.module';
 import {  PalindromeComponent } from './palindrome/palindrome.component';
 import { LandingComponent } from './landing/landing.component';
-import { NbButtonModule, NbCardModule, NbInputModule, NbRouteTabsetModule, NbTabsetModule } from '@nebular/theme';
+import { NbButtonGroupModule, NbButtonModule, NbCardModule, NbInputModule, NbRouteTabsetModule, NbTabsetModule } from '@nebular/theme';
 import { WordCounterComponent } from './word-counter/word-counter.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CelciousConvertorComponent } from './celcious-convertor/celcious-convertor.component';
+import { PatternsComponent } from './patterns/patterns.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { CelciousConvertorComponent } from './celcious-convertor/celcious-conver
     PalindromeComponent,
     LandingComponent,
     WordCounterComponent,
-    CelciousConvertorComponent
+    CelciousConvertorComponent,
+    PatternsComponent,
+    CalculatorComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +30,8 @@ import { CelciousConvertorComponent } from './celcious-convertor/celcious-conver
     NbCardModule,
     NbInputModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    NbButtonGroupModule
 
 
 
