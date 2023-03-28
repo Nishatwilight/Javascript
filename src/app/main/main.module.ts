@@ -10,6 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CelciousConvertorComponent } from './celcious-convertor/celcious-convertor.component';
 import { PatternsComponent } from './patterns/patterns.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { ColorFlipperComponent } from './color-flipper/color-flipper.component';
+import { FunctionComponent } from './main/function.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { CalculatorComponent } from './calculator/calculator.component';
     WordCounterComponent,
     CelciousConvertorComponent,
     PatternsComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    ColorFlipperComponent,
+    FunctionComponent
   ],
   imports: [
     CommonModule,

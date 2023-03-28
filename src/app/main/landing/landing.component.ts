@@ -32,6 +32,14 @@ export class LandingComponent {
     {
       title: 'Calculator',
       route: '/main/calculator', 
+    },
+    {
+      title: 'Color Flipper',
+      route: '/main/colorFlipper', 
+    },
+    {
+      title: 'Functions',
+      route: '/main/functions', 
     }
   ];
 

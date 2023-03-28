@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CelciousConvertorComponent } from './celcious-convertor/celcious-convertor.component';
+import { ColorFlipperComponent } from './color-flipper/color-flipper.component';
 import { LandingComponent } from './landing/landing.component';
+import { FunctionComponent } from './main/function.component';
 import {  PalindromeComponent } from './palindrome/palindrome.component';
 import { PatternsComponent } from './patterns/patterns.component';
 import { WordCounterComponent } from './word-counter/word-counter.component';
@@ -31,7 +33,15 @@ const routes: Routes = [
     {
       path: 'calculator',
       component: CalculatorComponent
-    }
+    },
+    {
+      path: 'colorFlipper',
+      component: ColorFlipperComponent
+    },
+    {
+      path: 'functions',
+      component: FunctionComponent
+    },
 
   ]
   },

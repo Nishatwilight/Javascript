@@ -23,9 +23,8 @@ export class CalculatorComponent {
     console.log("value1", value1); 
     this.value2 = Number(this.calcyValue2) 
     console.log("value2", this.value2); 
-    this.result = value1 + this.singleSelectValue + this.value2
+    this.final = eval(value1 + this.singleSelectValue + this.value2)
     console.log("result", this.result);
-    this.final = this.result
     
   }
   updateSingleSelectGroupValue(value: any): void {

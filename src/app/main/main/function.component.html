@@ -1,0 +1,32 @@
+<div class="row">
+    <nb-card size="small" class="w-50 mx-auto mt-5 col">
+        <nb-card-header class="d-flex justify-content-between"> 
+            <h4>Find the Sum </h4>
+        </nb-card-header>
+            <nb-card-body >
+                <input class="h-40"  nbInput fullWidth placeholder="Enter The Value" status="success" [(ngModel)]="getValue" (ngModelChange)="changes($event)">
+                <div class="mt-5">
+                    The sum of these values are: {{solution}}
+                </div>
+            </nb-card-body>
+            <nb-card-footer class="d-flex justify-content-between">
+                <button  size="tiny" nbButton status="danger" (click)="clear1()">Clear</button>
+            </nb-card-footer>
+    </nb-card>
+    <nb-card size="small" class="w-50 mx-auto mt-5 col">
+        <nb-card-header class="d-flex justify-content-between"> 
+            <h4>Finding the Sum of Positive Values</h4>
+        </nb-card-header>
+            <nb-card-body >
+                <input class="h-40"  nbInput fullWidth placeholder="Enter The Value" status="success" [(ngModel)]="getPositiveValue" (ngModelChange)="positiveVals($event)">
+                <div class="mt-5">
+                    The sum of Entered Positive Values are: 
+                </div>
+            </nb-card-body>
+            <nb-card-footer class="d-flex justify-content-between">
+                <button  size="tiny" nbButton status="danger" (click)="clear2()">Clear</button>
+            </nb-card-footer>
+    </nb-card>
+</div>
+
+

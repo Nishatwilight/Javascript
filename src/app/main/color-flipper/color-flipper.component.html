@@ -1,0 +1,13 @@
+<nb-card size="small" class="w-50 mx-auto mt-5">
+    <nb-card-header class="d-flex justify-content-between"> 
+        <h4>Color Flipper</h4>
+        <div>{{resultColor}}</div>
+    </nb-card-header>
+    <div id="colorChangeDiv" [ngStyle]="{'background-color': resultColor}">
+        <nb-card-body >
+            <div class="text-center align-center">
+                <button  size="tiny" nbButton status="success" (click)="changeColor()">Change Color</button>
+            </div>
+        </nb-card-body>
+    </div>
+</nb-card>

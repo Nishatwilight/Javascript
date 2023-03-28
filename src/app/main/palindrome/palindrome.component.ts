@@ -19,9 +19,9 @@ export class PalindromeComponent {
     this.palindromeCheck =this.searchSentence.split('').reverse().join().replaceAll(/[," "]/g, '').toLowerCase()
     console.log('palindromeCheck', this.palindromeCheck);  
     
-    if(this.palindrome = this.palindromeCheck){
+    if(this.palindrome == this.palindromeCheck){
       this.cheking= true;
-    } else(this.palindrome != this.palindromeCheck);{
+    } else if(this.palindrome != this.palindromeCheck){
       this.cheking= false  
     }
   }

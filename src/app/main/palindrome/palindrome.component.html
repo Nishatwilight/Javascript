@@ -7,11 +7,8 @@
         <div class="text-end">
             <button nbButton status="primary" (click)="clicking()">Check Here</button>
         </div>
-            <div *ngIf= "cheking">
-                Palindrome is True
-            </div>
-            <div *ngIf= "!cheking">
-                Palindromw is False
+            <div>
+                Palindrome is {{cheking}}
             </div>
     </nb-card-footer>
 </nb-card>
