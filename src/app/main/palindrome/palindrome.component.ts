@@ -6,13 +6,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./palindrome.component.scss'],
   // encapsulation: ViewEncapsulation.None
 })
+
 export class PalindromeComponent {
 
   searchSentence = '';
   cheking: boolean = true
   palindrome: any;
   palindromeCheck: any;
-
   clicking(){
     this.palindrome = this.searchSentence.replaceAll(' ', '').toLowerCase()
     console.log("palindrome", this.palindrome);

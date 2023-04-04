@@ -38,9 +38,9 @@ export class LandingComponent {
       route: '/main/colorFlipper', 
     },
     {
-      title: 'Functions',
+      title: 'Functions', //task1
       route: '/main/functions', 
-    }
+    },
   ];
 
 }

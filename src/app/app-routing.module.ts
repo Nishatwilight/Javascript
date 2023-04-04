@@ -10,6 +10,10 @@ const routes: Routes = [
     path:'main',
     loadChildren: () => import('./main/main.module').then(m => m.MainModule)
   },
+  {
+    path:'workTask',
+    loadChildren: () => import('./word-task/word-task.module').then(m => m.WordTaskModule)
+  },
   
 ];
 

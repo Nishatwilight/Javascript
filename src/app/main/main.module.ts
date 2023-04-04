@@ -23,7 +23,7 @@ import { FunctionComponent } from './main/function.component';
     PatternsComponent,
     CalculatorComponent,
     ColorFlipperComponent,
-    FunctionComponent
+    FunctionComponent,
   ],
   imports: [
     CommonModule,

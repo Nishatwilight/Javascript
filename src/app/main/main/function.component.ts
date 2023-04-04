@@ -12,6 +12,8 @@ export class FunctionComponent {
   solution: any;
   getPositiveValue=''
   arrayData: any;
+  range: any;
+
   constructor(){
 
   }
@@ -32,21 +34,16 @@ export class FunctionComponent {
   }
 
   positiveVals(data: any){
-  console.log("positiveVals", data);
-  this.arrayData = data.split('')
-  console.log("this.arrayData", this.arrayData);
-  this.arrayData.forEach((values: any)=>{
-    console.log("values", values);
-    if(values<=0){
-      let negative = values
-      console.log("negative", negative);
+  const pattern = /-?\d/g;
+  const matching = data.match(pattern);
+  console.log('matching', matching);
+  let   output ='';
+  matching.forEach((values: any) => {
+    if(values>=0){
+     output += values
     }
-    else if( values>=1){
-      let positive = values
-      console.log("positive", positive);
-    }
-  })
-
+  });
+  console.log('output',output);
   }
 
   clear2(){

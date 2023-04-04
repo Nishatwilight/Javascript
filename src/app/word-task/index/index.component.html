@@ -1,0 +1,66 @@
+<nb-card>
+ <nb-card-header>
+  PERMUTATION -1 
+ </nb-card-header>
+ <nb-card-body>
+  <input class="h-40"  nbInput fullWidth placeholder="Enter The Value" status="success" [(ngModel)]="enterValue">
+  <button  size="tiny" class="mt-3" nbButton status="danger" (click)="enter()">ENTER</button>
+
+ </nb-card-body>
+</nb-card>
+<hr>
+<nb-card>
+ <nb-card-header>
+  PERMUTATION -2 
+ </nb-card-header>
+ <nb-card-body>
+  <input class="h-40"  nbInput fullWidth placeholder="Enter The Value" status="success" [(ngModel)]="enterValue2">
+  <button  size="tiny" class="mt-3"  nbButton status="danger" (click)="enter2()">ENTER</button>
+
+ </nb-card-body>
+</nb-card>
+<hr>
+<nb-card>
+ <nb-card-header>
+  FACTORIAL
+ </nb-card-header>
+ <nb-card-body>
+  <input class="h-40"  nbInput fullWidth placeholder="Enter The Value" status="success" [(ngModel)]="enterValue3">
+  <button  size="tiny" class="mt-3"  nbButton status="danger" (click)="enter3()">ENTER</button>
+
+ </nb-card-body>
+</nb-card>
+<!-- 
+<nb-card>
+ <button  size="tiny" class="mt-3"  nbButton status="success" (click)="enter4()">ENTER</button>
+
+</nb-card>
+<nb-card>
+ <button  size="tiny" class="mt-3"  nbButton status="info" (click)="enter5()">ENTER</button>
+
+</nb-card>
+<nb-card>
+ <button  size="tiny" class="mt-3"  nbButton status="warning" (click)="enter6()">ENTER</button>
+
+</nb-card>
+<nb-card>
+ <button  size="tiny" class="mt-3"  nbButton status="warning" (click)="enter7()">ENTER</button>
+
+</nb-card> -->
+<nb-card>
+ <form #forms="ngForm" (ngSubmit)="onSubmiting(forms.value)">
+ <div>
+  <label for="fname">First Name</label>
+  <input type="text" name="fname" ngModel>
+ </div>
+<div>
+ <label for="lname">Last Name</label>
+ <input type="text" name="lname" ngModel>
+</div>
+ <div>
+  <label for="phone">Phone Number</label>
+  <input type="text" name="phone" ngModel>
+ </div>
+  <input type="submit">
+ </form>
+</nb-card>
