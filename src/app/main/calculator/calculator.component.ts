@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-calculator',
@@ -15,9 +15,18 @@ export class CalculatorComponent {
   value2: any;
   calcyValue2=''
   final: any;
+  @ViewChild('myTestDiv') myTestDiv: ElementRef | any;
+
   constructor(private cd: ChangeDetectorRef){
 
   }
+  ngAfterViewInit(){
+    const divEl: HTMLDivElement = this.myTestDiv.nativeElement;
+    divEl.style.color = 'red'
+    console.log(divEl);
+
+  }
+
   clicking(){
     let value1 = Number(this.calcyValue1)
     console.log("value1", value1); 

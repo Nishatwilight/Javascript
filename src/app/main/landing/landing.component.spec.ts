@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { LandingComponent } from './landing.component';
+import { NbRouteTabsetModule } from '@nebular/theme';
+import { ActivatedRoute } from '@angular/router';
 
 describe('LandingComponent', () => {
   let component: LandingComponent;
@@ -8,7 +10,9 @@ describe('LandingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LandingComponent ]
+      declarations: [ LandingComponent ],
+      imports: [HttpClientTestingModule,
+        NbRouteTabsetModule, ActivatedRoute]
     })
     .compileComponents();
 

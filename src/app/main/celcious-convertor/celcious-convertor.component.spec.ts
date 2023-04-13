@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CelciousConvertorComponent } from './celcious-convertor.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { NbCardModule, NbStatusService } from '@nebular/theme';
 
 describe('CelciousConvertorComponent', () => {
   let component: CelciousConvertorComponent;
@@ -8,7 +9,10 @@ describe('CelciousConvertorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CelciousConvertorComponent ]
+      declarations: [ CelciousConvertorComponent ],
+      imports: [HttpClientTestingModule,
+        NbCardModule],
+        providers: [NbStatusService]
     })
     .compileComponents();
 

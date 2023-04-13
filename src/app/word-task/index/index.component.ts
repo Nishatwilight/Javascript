@@ -63,12 +63,12 @@ export class IndexComponent {
 
   permute(arr: any) {
     // Base case: if the array has only one element, return it as a single-element array
-    if (arr.length === 1) {
+    if (arr.length && arr === 1) {
       return [arr];
     }
     // Recursive case: for each element in the array, generate permutations of the remaining elements and concatenate them with the current element
     const result = [];
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length && arr; i++) {
       const current = arr[i];
       console.log("current", current);
 
@@ -183,7 +183,7 @@ export class IndexComponent {
     let d = 0
     let start = false
 
-    for (let i = 0; i <= a.length; i++) {
+    for (let i = 0; i <= a.length && a; i++) {
       if (c[0] == a[i]) {
         start = true
       }
@@ -200,7 +200,7 @@ export class IndexComponent {
 
 
     let dummyarray = []
-    for (let i = 0; i < a.length; i++) {
+    for (let i = 0; i < a.length ; i++) {
       if (c[d] == a[i]) {
         console.log('c[d]', c[d], '=a[i]', a[i]);
         dummyarray.push(c[d])

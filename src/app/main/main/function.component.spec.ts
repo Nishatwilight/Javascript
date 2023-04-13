@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FunctionComponent } from './function.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { NbCardModule, NbStatusService } from '@nebular/theme';
 
 describe('FunctionComponent', () => {
   let component: FunctionComponent;
@@ -8,7 +10,9 @@ describe('FunctionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FunctionComponent ]
+      declarations: [ FunctionComponent ],
+      imports: [HttpClientTestingModule,NbCardModule],
+      providers: [NbStatusService]
     })
     .compileComponents();
 

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { WordCounterComponent } from './word-counter.component';
+import { NbCardModule, NbStatusService } from '@nebular/theme';
 
 describe('WordCounterComponent', () => {
   let component: WordCounterComponent;
@@ -8,7 +9,9 @@ describe('WordCounterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WordCounterComponent ]
+      declarations: [ WordCounterComponent ],
+      imports: [NbCardModule],
+      providers: [NbStatusService]
     })
     .compileComponents();
 

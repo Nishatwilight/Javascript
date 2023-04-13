@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { UnitTestDirective } from './unit-test.directive';
+import { UnitTestPipe } from './unit-test.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UnitTestDirective,
+    UnitTestPipe
   ],
   imports: [
     BrowserModule,
