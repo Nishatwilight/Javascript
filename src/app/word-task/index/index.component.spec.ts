@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormsModule } from '@angular/forms';
 import { IndexComponent } from './index.component';
 import { NbCardModule, NbStatusService } from '@nebular/theme';
 
@@ -10,7 +10,7 @@ describe('IndexComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ IndexComponent ],
-      imports: [NbCardModule],
+      imports: [NbCardModule, FormsModule],
       providers: [NbStatusService]
     })
     .compileComponents();

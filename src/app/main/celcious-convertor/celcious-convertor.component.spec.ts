@@ -2,6 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CelciousConvertorComponent } from './celcious-convertor.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { NbCardModule, NbStatusService } from '@nebular/theme';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 describe('CelciousConvertorComponent', () => {
   let component: CelciousConvertorComponent;
@@ -11,8 +13,10 @@ describe('CelciousConvertorComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ CelciousConvertorComponent ],
       imports: [HttpClientTestingModule,
-        NbCardModule],
-        providers: [NbStatusService]
+        NbCardModule, FormsModule],
+        providers: [NbStatusService],
+        schemas: [NO_ERRORS_SCHEMA],
+
     })
     .compileComponents();
 
